@@ -22,6 +22,9 @@ import testResults from '../data/result.json';
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
+/**
+ * Replace ANSI formatting with simple HTML/CSS
+ */
 const ansiToHtml = (text: string): string =>
 	text.replace(/\u001b\[(\d+)m/g, (...m) => (
 		{
@@ -35,6 +38,9 @@ const ansiToHtml = (text: string): string =>
 		}[m[1]]
 	));
 
+/**
+ * Translate an array of lines (e.g. test definition)
+ */
 const translate = (testDefinition: TestLine[], testResults: TestLineResult[], parentLineId = ''): Array<[string, string, string]> =>
 	testDefinition.map((testLine, lineNumber) => {
 		const lineResult = testResults.find(result =>
