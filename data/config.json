@@ -1,0 +1,22 @@
+{
+  "id": "c8979c57-3205-4a81-9c12-d2fcbcd23d3a",
+  "url": "https://suite.st",
+  "name": "Website",
+  "status": "unchanged",
+  "filename": null,
+  "platform": "browser",
+  "domainList": [
+    "suite.st"
+  ],
+  "notDomains": [],
+  "suitestify": true,
+  "freezeRules": [],
+  "htmlPackage": false,
+  "learnDomains": false,
+  "codeOverrides": {},
+  "autoinstrument": true,
+  "configVariables": [],
+  "overrideOpenApp": null,
+  "packageMetadata": null,
+  "domainCandidates": []
+}

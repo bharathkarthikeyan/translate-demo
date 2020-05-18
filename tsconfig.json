@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "rootDir": "lib",
+    "moduleResolution": "node",
+    "outFile": "./build/index.js",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017"
+    ],
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "downlevelIteration": true,
+    "declaration": true,
+    "jsx": "react",
+    "jsxFactory": "jsx",
+    "esModuleInterop": true
+  },
+  "include": [
+    "lib"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

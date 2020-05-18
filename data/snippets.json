@@ -1,0 +1,51 @@
+{
+  "dadffb68-2be3-497b-8e57-4358753f7053": [
+    {
+      "then": "success",
+      "type": "wait",
+      "fatal": true,
+      "lineId": "b57070d9-1ebb-4102-87bb-5a0bd68295e9",
+      "timeout": 10000,
+      "excluded": false,
+      "condition": {
+        "val": "https://suite.st/docs/",
+        "type": "=",
+        "subject": {
+          "type": "location"
+        }
+      },
+      "screenshot": false
+    },
+    {
+      "then": "success",
+      "type": "wait",
+      "fatal": true,
+      "lineId": "2f240987-1b0d-4f51-a02c-d86ac3fc199a",
+      "timeout": 5000,
+      "excluded": false,
+      "condition": {
+        "type": "has",
+        "subject": {
+          "type": "element",
+          "nameHint": "Logo",
+          "elementId": "49062bd4-365c-43eb-a323-fc1ab3699042"
+        },
+        "expression": [
+          {
+            "uid": "2eed9474-d552-4a6a-93d9-270c1edcfed4",
+            "val": "./../img/suitest-logo-mobile.svg",
+            "type": "=",
+            "property": "image"
+          },
+          {
+            "uid": "74554e95-459f-4e67-aa2d-e59697e8b66f",
+            "val": "loaded",
+            "type": "=",
+            "property": "imageLoadState"
+          }
+        ]
+      },
+      "screenshot": false
+    }
+  ]
+}

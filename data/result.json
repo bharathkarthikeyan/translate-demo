@@ -1,0 +1,128 @@
+[
+  {
+    "lineId": "8a239e5d-f035-4a72-ac7d-23098d0cb7c5",
+    "result": "warning",
+    "message": {
+      "code": "invalidUrl"
+    },
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      1,
+      195265271
+    ],
+    "actualValue": "https://suite.st/docs/",
+    "timeStarted": 1589278740244,
+    "timeFinished": 1589278741440,
+    "expectedValue": "https://suite.st/docs",
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "7cfd7552-e27f-48b5-87b7-270e7ef3df41",
+    "result": "success",
+    "results": [
+      {
+        "lineId": "7cfd7552-e27f-48b5-87b7-270e7ef3df41-1",
+        "result": "success",
+        "timeHrDiff": [
+          0,
+          30773730
+        ],
+        "timeStarted": 1589278741441,
+        "timeFinished": 1589278741471,
+        "timeScreenshotHr": [
+          0,
+          0
+        ]
+      },
+      {
+        "lineId": "7cfd7552-e27f-48b5-87b7-270e7ef3df41-2",
+        "result": "success",
+        "expression": [
+          {
+            "result": "success"
+          },
+          {
+            "result": "success"
+          }
+        ],
+        "timeHrDiff": [
+          0,
+          28550180
+        ],
+        "timeStarted": 1589278741471,
+        "timeFinished": 1589278741500,
+        "timeScreenshotHr": [
+          0,
+          0
+        ]
+      }
+    ],
+    "timeHrDiff": [
+      0,
+      60247395
+    ],
+    "timeStarted": 1589278741440,
+    "timeFinished": 1589278741501,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "274dc724-821f-41e2-bbd8-31016ed82c65",
+    "result": "success",
+    "timeHrDiff": [
+      2,
+      503265354
+    ],
+    "timeStarted": 1589278741501,
+    "timeFinished": 1589278744004,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "897c6b81-62f2-431d-a990-2ccda57e6d9a",
+    "result": "success",
+    "timeHrDiff": [
+      0,
+      26055346
+    ],
+    "timeStarted": 1589278744004,
+    "timeFinished": 1589278744030,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "d9362e08-509b-413a-95e3-4d37cdf440fb",
+    "result": "fail",
+    "errorType": "queryFailed",
+    "expression": [
+      {
+        "result": "success"
+      },
+      {
+        "result": "fail",
+        "errorType": "queryFailed",
+        "actualValue": "rgb(240, 96, 96)",
+        "expectedValue": "rgb(200, 96, 96)"
+      }
+    ],
+    "timeHrDiff": [
+      0,
+      27928510
+    ],
+    "timeStarted": 1589278744031,
+    "timeFinished": 1589278744059,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  }
+]
