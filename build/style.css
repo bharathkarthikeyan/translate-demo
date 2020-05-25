@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 20px;
+}
+
+.line-contents {
+    background-color: #ddd;
+    padding: 5px;
+    margin: 0 0 10px;
+    border-radius: 5px;
+}
+
+.annotation {
+    font-size: .8rem;
+}
+
+.children {
+    margin-left: 30px
+}

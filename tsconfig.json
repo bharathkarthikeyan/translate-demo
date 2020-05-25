@@ -1,15 +1,12 @@
 {
   "compilerOptions": {
-    "rootDir": "lib",
+    "rootDir": ".",
     "moduleResolution": "node",
     "outFile": "./build/index.js",
     "module": "commonjs",
     "target": "es5",
     "lib": [
-      "es5",
-      "es6",
-      "es7",
-      "es2017"
+      "ES2020"
     ],
     "experimentalDecorators": true,
     "preserveConstEnums": true,
@@ -23,7 +20,8 @@
     "declaration": true,
     "jsx": "react",
     "jsxFactory": "jsx",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
   "include": [
     "lib"

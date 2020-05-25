@@ -1,22 +1,16 @@
 {
-  "id": "c8979c57-3205-4a81-9c12-d2fcbcd23d3a",
-  "url": "https://suite.st",
-  "name": "Website",
-  "status": "unchanged",
-  "filename": null,
-  "platform": "browser",
-  "domainList": [
-    "suite.st"
-  ],
+  "url": "http://file.suite.st/demoapp/hbbtv.html",
+  "platform": "hbbtv",
+  "domainList": [ "suite.st", "file.suite.st" ],
   "notDomains": [],
   "suitestify": true,
   "freezeRules": [],
   "htmlPackage": false,
+  "screenshots": "default",
   "learnDomains": false,
   "codeOverrides": {},
   "autoinstrument": true,
-  "configVariables": [],
+  "configVariables": [ { "key": "img", "value": "test.jpg" } ],
   "overrideOpenApp": null,
-  "packageMetadata": null,
   "domainCandidates": []
 }

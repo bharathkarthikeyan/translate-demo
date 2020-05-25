@@ -1,92 +1,106 @@
 [
   {
     "type": "openApp",
-    "lineId": "8a239e5d-f035-4a72-ac7d-23098d0cb7c5",
-    "relativeUrl": "/docs"
-  },
-  {
-    "val": "dadffb68-2be3-497b-8e57-4358753f7053",
-    "type": "runSnippet",
-    "lineId": "7cfd7552-e27f-48b5-87b7-270e7ef3df41"
-  },
-  {
-    "val": "test",
-    "type": "sendText",
-    "count": 1,
-    "delay": 1000,
     "fatal": false,
-    "lineId": "274dc724-821f-41e2-bbd8-31016ed82c65",
-    "target": {
-      "type": "element",
-      "nameHint": "search field",
-      "elementId": "d97a945e-4812-4285-a7e3-601ba681b4c9",
-      "val": {
-        "css": "#mkdocs-search-query",
-        "ifMultipleFoundReturn": 1
-      },
-      "name": "search field"
-    },
+    "lineId": "5202e0d8-0cae-4587-bb01-c57c0d46371f",
     "excluded": false,
     "screenshot": false
   },
   {
-    "val": "[[Enter]]",
-    "type": "sendText",
-    "count": 5,
-    "delay": 1000,
+    "val": "Run snippet",
+    "type": "comment",
     "fatal": false,
-    "lineId": "897c6b81-62f2-431d-a990-2ccda57e6d9a",
-    "target": {
-      "type": "window"
-    },
+    "lineId": "b05c9c06-87a4-4b38-8d1b-32263090d20f",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "b7a6b6b2-04a5-49a8-91e6-a97b26479bb1",
+    "type": "runSnippet",
+    "count": 1,
+    "fatal": true,
+    "lineId": "757cd8f1-c064-4b46-a151-32a830950ebb",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "Make sure videos are playable",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "5e0eca50-d36a-49cf-8888-35094966daaf",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "7e44a041-7256-4e3a-8b59-d699f3d08d79",
+    "type": "runSnippet",
+    "count": 5,
+    "fatal": false,
+    "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102",
     "excluded": false,
     "condition": {
-      "type": "visible",
+      "type": "has",
       "subject": {
-        "type": "element",
-        "nameHint": "Search results container",
-        "elementId": "c11a6f49-e577-4f80-aa44-44bb1ad63475",
         "val": {
-          "css": "#mkdocs-search-results",
+          "css": ":nth-child(5) > :nth-child(2) > div",
           "ifMultipleFoundReturn": 1
         },
-        "name": "Search results container"
+        "name": "BBB focused",
+        "type": "element",
+        "nameHint": "BBB focused",
+        "elementId": "79272c2d-4fdf-4a73-b523-46381f7e0f8c"
       },
-      "expression": []
+      "expression": [
+        {
+          "uid": "aae1869b-36a3-471c-acf0-550e0dd68cba",
+          "val": "rgb(52, 191, 228)",
+          "type": "=",
+          "property": "color"
+        },
+        {
+          "uid": "29eb5636-242d-41f5-8a8f-dc5a659c3e76",
+          "val": "Big Buck Bunny",
+          "type": "=",
+          "property": "text"
+        }
+      ]
     },
+    "screenshot": false,
+    "negateCondition": false
+  },
+  {
+    "val": "This line will fail",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "81f998b7-da60-41f2-aa69-168b7e47269e",
+    "excluded": false,
     "screenshot": false
   },
   {
     "then": "success",
     "type": "assert",
     "fatal": false,
-    "lineId": "d9362e08-509b-413a-95e3-4d37cdf440fb",
+    "lineId": "1f84a278-0141-4b08-8306-08c94060f943",
     "excluded": false,
     "condition": {
       "type": "has",
       "subject": {
-        "type": "element",
-        "nameHint": "First search result",
-        "elementId": "95936dc1-fec7-453e-ae89-1a0362a62873",
         "val": {
-          "css": ":nth-child(1) > h3 > a",
+          "css": "#root > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1)",
           "ifMultipleFoundReturn": 1
         },
-        "name": "First search result"
+        "name": "Demo Logo",
+        "type": "element",
+        "nameHint": "Demo Logo",
+        "elementId": "f63b9c55-ff1a-4236-ab15-1a287403080d"
       },
       "expression": [
         {
-          "uid": "65771a7c-a606-4680-9a71-34ff10bdc845",
-          "val": "test",
-          "type": "~",
-          "property": "text",
-          "deviation": 300
-        },
-        {
-          "uid": "425a2c97-c655-4534-b22d-64c609351917",
-          "val": "rgb(200, 96, 96)",
+          "uid": "520ce97c-2f33-44d9-a172-045478b2136c",
+          "val": "http://file.suite.st/demoapp/assets/<%img%>",
           "type": "=",
-          "property": "color"
+          "property": "image",
+          "_isEditedByUser": true
         }
       ]
     },
