@@ -79,17 +79,9 @@
         "results": [
           {
             "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-1",
-            "result": "success",
-            "timeHrDiff": [
-              2,
-              293507722
-            ],
+            "result": "excluded",
             "timeStarted": 1590397827382,
-            "timeFinished": 1590397829675,
-            "timeScreenshotHr": [
-              0,
-              0
-            ]
+            "timeFinished": 1590397827382
           },
           {
             "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-2",

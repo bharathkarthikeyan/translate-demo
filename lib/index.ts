@@ -166,9 +166,9 @@ const translate = (data: {
 			formattedText,
 			html,
 			lineNumber: lineIndex + 1,
-			startTime: new Date(lineResult.timeStarted),
+			startTime: new Date(lineResult?.timeStarted),
 			includeInStepsToReproduce: isCommand(testLine)
-				|| lineResult.result !== 'success'
+				|| lineResult?.result !== 'success'
 				|| testLine.fatal,
 		};
 
@@ -176,10 +176,10 @@ const translate = (data: {
 			// This is a snippet, process child lines and loops
 			let loops: TestLineResult[] = [];
 
-			if (Array.isArray(lineResult.results) && !Array.isArray(lineResult.loopResults)) {
+			if (Array.isArray(lineResult?.results) && !Array.isArray(lineResult?.loopResults)) {
 				// Wrap results into a single loop to unify the way we process this
 				loops = [lineResult.results];
-			} else if (Array.isArray(lineResult.loopResults)) {
+			} else if (Array.isArray(lineResult?.loopResults)) {
 				loops = lineResult.loopResults.map(res => res.results);
 			}
 

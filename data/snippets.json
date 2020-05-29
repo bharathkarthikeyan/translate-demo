@@ -10,7 +10,7 @@
       "delay": 1000,
       "fatal": false,
       "lineId": "da6c3e1a-bef2-4b7a-8a26-684b016335c8",
-      "excluded": false,
+      "excluded": true,
       "screenshot": false
     },
     {
