@@ -184,14 +184,22 @@ const translate = (data: {
 			}
 
 			if (loops.length) {
-				output.children = loops.map(loop => translate({
-					testDefinition: data.snippetDefinitions[testLine.val],
-					snippetDefinitions: data.snippetDefinitions,
-					testResults: loop,
-					appConfig: data.appConfig,
-					snippetNames: data.snippetNames,
-					elementNames: data.elementNames,
-				}));
+				const definition = [...data.snippetDefinitions[testLine.val]];
+
+				if (definition[0] && definition[0].type === 'openApp') {
+					definition.shift();
+				}
+
+				output.children = loops.map(loop => {
+					return translate({
+						testDefinition: definition,
+						snippetDefinitions: data.snippetDefinitions,
+						testResults: loop,
+						appConfig: data.appConfig,
+						snippetNames: data.snippetNames,
+						elementNames: data.elementNames,
+					});
+				});
 			}
 		}
 
@@ -239,7 +247,6 @@ const main = async (): Promise<void> => {
 	const template = await readFile(templatePath, 'utf8');
 	const rendered = ejs.render(template, {translations}, {filename: templatePath});
 	await writeFile(path.join(__dirname, '..', 'build', 'index.html'), rendered, 'utf8');
-	await writeFile(path.join(__dirname, '..', 'build', 'test.json'), JSON.stringify(translations, null, '\t'), 'utf8')
 };
 
 main().catch(e => {
