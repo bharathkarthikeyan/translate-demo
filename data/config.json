@@ -10,7 +10,20 @@
   "learnDomains": false,
   "codeOverrides": {},
   "autoinstrument": true,
-  "configVariables": [ { "key": "img", "value": "test.jpg" } ],
+  "configVariables": [
+    {
+      "key": "img",
+      "value": "test.jpg"
+    },
+    {
+      "key": "var1",
+      "value": "123"
+    },
+    {
+      "key": "var2",
+      "value": "456"
+    }
+  ],
   "overrideOpenApp": null,
   "domainCandidates": []
 }

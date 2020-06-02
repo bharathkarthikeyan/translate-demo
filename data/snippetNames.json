@@ -1,8 +1,14 @@
 {
-  "7e44a041-7256-4e3a-8b59-d699f3d08d79": {
-    "name": "Page is open"
+  "4390bf5a-d150-4ef0-9355-aa52d6dbe93e": {
+    "name": "Nested snippet 2"
   },
-  "b7a6b6b2-04a5-49a8-91e6-a97b26479bb1": {
-    "name": "Test video"
+  "54d06ee9-6e5f-4046-9625-f06d7aa43ee6": {
+    "name": "Snippet with failure"
+  },
+  "5b30b436-e23a-41a4-bdb2-af96b54d57ff": {
+    "name": "Nested snippet 1"
+  },
+  "74a6e24f-6f87-4b77-8522-cfcd27ea2e16": {
+    "name": "Make sure app is open"
   }
 }

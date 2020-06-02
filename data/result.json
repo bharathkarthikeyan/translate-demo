@@ -1,54 +1,31 @@
 [
   {
-    "lineId": "5202e0d8-0cae-4587-bb01-c57c0d46371f",
+    "lineId": "9952c3c9-8df7-4a5a-9172-0da1be908524",
     "result": "success",
     "timeHrDiff": [
-      1,
-      46105261
+      4,
+      546120497
     ],
-    "timeStarted": 1590397826248,
-    "timeFinished": 1590397827294,
+    "timeStarted": 1591091635065,
+    "timeFinished": 1591091639612,
     "timeScreenshotHr": [
       0,
       0
     ]
   },
   {
-    "lineId": "757cd8f1-c064-4b46-a151-32a830950ebb",
+    "lineId": "897feabc-27ba-42d8-906f-7d96d4ce1395",
     "result": "success",
     "results": [
       {
-        "lineId": "757cd8f1-c064-4b46-a151-32a830950ebb-1",
+        "lineId": "897feabc-27ba-42d8-906f-7d96d4ce1395-2",
         "result": "success",
         "timeHrDiff": [
           0,
-          27275195
+          525096442
         ],
-        "timeStarted": 1590397827295,
-        "timeFinished": 1590397827323,
-        "timeScreenshotHr": [
-          0,
-          0
-        ]
-      },
-      {
-        "lineId": "757cd8f1-c064-4b46-a151-32a830950ebb-2",
-        "result": "success",
-        "errorType": "queryFailed",
-        "expression": [
-          {
-            "result": "success",
-            "errorType": "queryFailed",
-            "actualValue": "http://file.suite.st/demoapp/assets/logo.png",
-            "expectedValue": "http://file.suite.st/demoapp/assets/logo.png"
-          }
-        ],
-        "timeHrDiff": [
-          0,
-          31621199
-        ],
-        "timeStarted": 1590397827323,
-        "timeFinished": 1590397827355,
+        "timeStarted": 1591091639613,
+        "timeFinished": 1591091640138,
         "timeScreenshotHr": [
           0,
           0
@@ -57,60 +34,246 @@
     ],
     "timeHrDiff": [
       0,
-      60503872
+      525949872
     ],
-    "timeStarted": 1590397827295,
-    "timeFinished": 1590397827356,
+    "timeStarted": 1591091639612,
+    "timeFinished": 1591091640138,
     "timeScreenshotHr": [
       0,
       0
     ]
   },
   {
-    "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102",
-    "result": "success",
+    "lineId": "bc7b567a-50a4-492a-be96-095694b46fbd",
+    "result": "excluded",
     "timeHrDiff": [
-      11,
-      573417937
+      0,
+      608184
     ],
+    "timeStarted": 1591091640139,
+    "timeFinished": 1591091640139,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "8c50c967-d8ab-49de-a2e7-5e2a92b4a82b",
+    "result": "fail",
+    "results": [
+      {
+        "lineId": "8c50c967-d8ab-49de-a2e7-5e2a92b4a82b-1",
+        "result": "fail",
+        "message": {
+          "code": "existingSubject",
+          "info": {}
+        },
+        "errorType": "queryFailed",
+        "timeHrDiff": [
+          0,
+          70095314
+        ],
+        "timeStarted": 1591091640140,
+        "timeFinished": 1591091640210,
+        "timeScreenshotHr": [
+          0,
+          0
+        ]
+      }
+    ],
+    "timeHrDiff": [
+      0,
+      70993798
+    ],
+    "timeStarted": 1591091640140,
+    "timeFinished": 1591091640211,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "700147b1-f20f-411e-867e-f7a33a3b7a9a",
+    "result": "success",
+    "results": [
+      {
+        "lineId": "700147b1-f20f-411e-867e-f7a33a3b7a9a-2",
+        "result": "success",
+        "results": [
+          {
+            "lineId": "700147b1-f20f-411e-867e-f7a33a3b7a9a-2-2",
+            "result": "success",
+            "timeHrDiff": [
+              2,
+              1188413
+            ],
+            "timeStarted": 1591091640212,
+            "timeFinished": 1591091642214,
+            "timeScreenshotHr": [
+              0,
+              0
+            ]
+          },
+          {
+            "lineId": "700147b1-f20f-411e-867e-f7a33a3b7a9a-2-3",
+            "result": "success",
+            "timeHrDiff": [
+              0,
+              26256873
+            ],
+            "timeStarted": 1591091642214,
+            "timeFinished": 1591091642240,
+            "timeScreenshotHr": [
+              0,
+              0
+            ]
+          }
+        ],
+        "timeHrDiff": [
+          2,
+          28310189
+        ],
+        "timeStarted": 1591091640212,
+        "timeFinished": 1591091642240,
+        "timeScreenshotHr": [
+          0,
+          0
+        ]
+      }
+    ],
+    "timeHrDiff": [
+      2,
+      29014934
+    ],
+    "timeStarted": 1591091640212,
+    "timeFinished": 1591091642241,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "errors": [
+      {
+        "type": "noUriFound"
+      }
+    ],
+    "lineId": "53ec3a24-8155-4d30-9974-83de6517415a",
+    "result": "fail",
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      1564986
+    ],
+    "timeStarted": 1591091642241,
+    "timeFinished": 1591091642243,
+    "timeScreenshotHr": [
+      0,
+      0
+    ],
+    "failingRequestCount": 0
+  },
+  {
+    "lineId": "646e4765-c629-44dd-b9dc-5e015e65d465",
+    "result": "success",
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      24741462
+    ],
+    "actualValue": "http://file.suite.st/sampleapp/index-hbbtv.html",
+    "timeStarted": 1591091642244,
+    "timeFinished": 1591091642269,
+    "expectedValue": "foo-bar",
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "87412942-9ee9-4a46-869a-5183e8a9ea67",
+    "result": "warning",
+    "timeHrDiff": [
+      0,
+      25199204
+    ],
+    "timeStarted": 1591091642269,
+    "timeFinished": 1591091642294,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "c140befb-0150-42db-8227-68c8a385d2fc",
+    "result": "success",
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      24824598
+    ],
+    "actualValue": "http://file.suite.st/sampleapp/index-hbbtv.html",
+    "timeStarted": 1591091642295,
+    "timeFinished": 1591091642320,
+    "expectedValue": "foo-bar",
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "5c9951dc-cf1d-4fc1-bd5c-7edee0b4a828",
+    "result": "fail",
+    "timeHrDiff": [
+      0,
+      24544471
+    ],
+    "timeStarted": 1591091642324,
+    "timeFinished": 1591091642349,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "462f0e11-83ec-4baa-a4f6-16d4d01f845e",
+    "result": "success",
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      24139113
+    ],
+    "actualValue": "http://file.suite.st/sampleapp/index-hbbtv.html",
+    "timeStarted": 1591091642349,
+    "timeFinished": 1591091642373,
+    "expectedValue": "foo-test.jpg",
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "9aa40aa7-464b-4376-8e44-1509dcaa5538",
+    "result": "fail",
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      123010133
+    ],
+    "actualValue": "http://file.suite.st/sampleapp/index-hbbtv.html",
     "loopResults": [
       {
         "result": "success",
         "results": [
           {
-            "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-1",
-            "result": "excluded",
-            "timeStarted": 1590397827382,
-            "timeFinished": 1590397827382
-          },
-          {
-            "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-2",
-            "result": "success",
-            "expression": [
-              {
-                "result": "success"
-              }
-            ],
-            "timeHrDiff": [
-              0,
-              46663552
-            ],
-            "timeStarted": 1590397829675,
-            "timeFinished": 1590397829722,
-            "timeScreenshotHr": [
-              0,
-              0
-            ]
-          },
-          {
-            "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-3",
+            "lineId": "9aa40aa7-464b-4376-8e44-1509dcaa5538-2",
             "result": "success",
             "timeHrDiff": [
-              3,
-              424263311
+              0,
+              25324599
             ],
-            "timeStarted": 1590397829722,
-            "timeFinished": 1590397833146,
+            "timeStarted": 1591091642398,
+            "timeFinished": 1591091642423,
             "timeScreenshotHr": [
               0,
               0
@@ -118,11 +281,11 @@
           }
         ],
         "timeHrDiff": [
-          5,
-          764466791
+          0,
+          25360894
         ],
-        "timeStarted": 1590397827381,
-        "timeFinished": 1590397833146,
+        "timeStarted": 1591091642398,
+        "timeFinished": 1591091642423,
         "timeScreenshotHr": [
           0,
           0
@@ -132,47 +295,14 @@
         "result": "success",
         "results": [
           {
-            "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-1",
+            "lineId": "9aa40aa7-464b-4376-8e44-1509dcaa5538-2",
             "result": "success",
             "timeHrDiff": [
-              2,
-              281063284
-            ],
-            "timeStarted": 1590397833171,
-            "timeFinished": 1590397835452,
-            "timeScreenshotHr": [
               0,
-              0
-            ]
-          },
-          {
-            "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-2",
-            "result": "success",
-            "expression": [
-              {
-                "result": "success"
-              }
+              25089968
             ],
-            "timeHrDiff": [
-              0,
-              25047308
-            ],
-            "timeStarted": 1590397835452,
-            "timeFinished": 1590397835477,
-            "timeScreenshotHr": [
-              0,
-              0
-            ]
-          },
-          {
-            "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102-3",
-            "result": "success",
-            "timeHrDiff": [
-              3,
-              427666855
-            ],
-            "timeStarted": 1590397835477,
-            "timeFinished": 1590397838905,
+            "timeStarted": 1591091642447,
+            "timeFinished": 1591091642472,
             "timeScreenshotHr": [
               0,
               0
@@ -180,46 +310,104 @@
           }
         ],
         "timeHrDiff": [
-          5,
-          733815232
+          0,
+          25120203
         ],
-        "timeStarted": 1590397833171,
-        "timeFinished": 1590397838905,
+        "timeStarted": 1591091642447,
+        "timeFinished": 1591091642472,
         "timeScreenshotHr": [
           0,
           0
         ]
       }
     ],
-    "timeStarted": 1590397827356,
-    "timeFinished": 1590397838931,
+    "timeStarted": 1591091642374,
+    "timeFinished": 1591091642497,
+    "expectedValue": "foo-bar",
     "timeScreenshotHr": [
       0,
       0
     ]
   },
   {
-    "lineId": "1f84a278-0141-4b08-8306-08c94060f943",
+    "lineId": "17772ab7-b703-4da4-8da0-2e4072898594",
     "result": "fail",
-    "errorType": "queryFailed",
-    "expression": [
-      {
-        "result": "fail",
-        "errorType": "queryFailed",
-        "actualValue": "http://file.suite.st/demoapp/assets/logo.png",
-        "expectedValue": "http://file.suite.st/demoapp/assets/test.jpg"
+    "message": {
+      "code": "exprException",
+      "info": {
+        "exception": "Unexpected number"
       }
-    ],
+    },
+    "errorType": "queryFailed",
     "timeHrDiff": [
       0,
-      24680959
+      25663306
     ],
-    "timeStarted": 1590397838931,
-    "timeFinished": 1590397838956,
+    "actualValue": "undefined",
+    "timeStarted": 1591091642498,
+    "timeFinished": 1591091642523,
     "timeScreenshotHr": [
       0,
       0
+    ]
+  },
+  {
+    "lineId": "fec4be4c-a145-4dd3-9876-d4906ffd181e",
+    "result": "fail",
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      29084314
     ],
-    "screenshot": "/screenshots/fd5102eb-b613-404a-87b1-03dfd376f323/1"
+    "actualValue": false,
+    "timeStarted": 1591091642524,
+    "timeFinished": 1591091642553,
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "f77eba44-cd2a-43b8-98cd-79b99d776c3c",
+    "result": "fail",
+    "message": {
+      "code": "exprException",
+      "info": {
+        "exception": "someExpression is not defined"
+      }
+    },
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      24552759
+    ],
+    "actualValue": "undefined",
+    "timeStarted": 1591091642554,
+    "timeFinished": 1591091642578,
+    "expectedValue": "foo bar 456",
+    "timeScreenshotHr": [
+      0,
+      0
+    ]
+  },
+  {
+    "lineId": "4e7aee1e-d94f-4448-a8d7-66b4ad29832f",
+    "result": "fatal",
+    "message": {
+      "code": "existingSubject",
+      "info": {}
+    },
+    "errorType": "queryFailed",
+    "timeHrDiff": [
+      0,
+      24581904
+    ],
+    "timeStarted": 1591091642579,
+    "timeFinished": 1591091644404,
+    "timeScreenshotHr": [
+      1,
+      799968568
+    ],
+    "screenshot": "/screenshots/869d7efd-a304-411a-9846-3a5969387ffd/1"
   }
 ]

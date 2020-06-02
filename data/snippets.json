@@ -1,99 +1,97 @@
 {
-  "7e44a041-7256-4e3a-8b59-d699f3d08d79": [
+  "4390bf5a-d150-4ef0-9355-aa52d6dbe93e": [
     {
-      "ids": [
-        "RIGHT",
-        "ENTER"
-      ],
-      "type": "button",
-      "count": 1,
-      "delay": 1000,
+      "type": "openApp",
       "fatal": false,
-      "lineId": "da6c3e1a-bef2-4b7a-8a26-684b016335c8",
-      "excluded": true,
-      "screenshot": false
-    },
-    {
-      "then": "success",
-      "type": "wait",
-      "fatal": false,
-      "lineId": "9014bee6-3f6a-4e7a-8406-c39e38dcca5e",
-      "timeout": 10000,
+      "lineId": "2312fbb5-896d-4817-94f5-636855adbbdb",
       "excluded": false,
-      "condition": {
-        "type": "has",
-        "subject": {
-          "type": "video"
-        },
-        "expression": [
-          {
-            "uid": "268326d1-a3e1-4316-8df6-4009595e2271",
-            "val": "playing",
-            "type": "=",
-            "property": "videoState",
-            "_isEditedByUser": true
-          }
-        ]
-      },
       "screenshot": false
     },
     {
-      "ids": [
-        "LEFT",
-        "LEFT",
-        "ENTER"
-      ],
-      "type": "button",
-      "count": 1,
-      "delay": 1000,
+      "type": "sleep",
       "fatal": false,
-      "lineId": "d22c0dd4-90f5-4cbc-af51-ed0a1ccd0e7e",
+      "lineId": "bc478988-c1e1-4e69-b584-c514d4c884c3",
+      "timeout": 2000,
+      "excluded": false,
+      "screenshot": false
+    },
+    {
+      "val": "console.log(1)",
+      "type": "execCmd",
+      "fatal": false,
+      "lineId": "ab7a3bfe-95f6-49bc-a923-2b1599ecd1ea",
       "excluded": false,
       "screenshot": false
     }
   ],
-  "b7a6b6b2-04a5-49a8-91e6-a97b26479bb1": [
+  "54d06ee9-6e5f-4046-9625-f06d7aa43ee6": [
+    {
+      "val": "This line will fail",
+      "type": "comment",
+      "fatal": false,
+      "lineId": "de21ff00-f9ba-4ef3-af7b-a7e1e240542b",
+      "excluded": false,
+      "screenshot": false
+    },
+    {
+      "then": "success",
+      "type": "assert",
+      "fatal": false,
+      "lineId": "88f873da-6ef3-4980-8eca-74d4eabb38f0",
+      "excluded": false,
+      "condition": {
+        "type": "!exists",
+        "subject": {
+          "type": "element",
+          "nameHint": "Main Menu Home Button",
+          "elementId": "201d0f24-f451-4901-9496-c69b361c7f5b"
+        },
+        "expression": []
+      },
+      "screenshot": false
+    }
+  ],
+  "5b30b436-e23a-41a4-bdb2-af96b54d57ff": [
+    {
+      "type": "openApp",
+      "fatal": false,
+      "lineId": "08c37013-95af-4115-8e9a-d96a03d0d5a2",
+      "excluded": false,
+      "screenshot": false
+    },
+    {
+      "val": "4390bf5a-d150-4ef0-9355-aa52d6dbe93e",
+      "type": "runSnippet",
+      "count": 1,
+      "fatal": false,
+      "lineId": "cf4aeaee-8144-4970-8df5-754468c26d3d",
+      "excluded": false,
+      "screenshot": false
+    }
+  ],
+  "74a6e24f-6f87-4b77-8522-cfcd27ea2e16": [
+    {
+      "type": "openApp",
+      "fatal": false,
+      "lineId": "88787b27-0169-42a8-bfaf-c88a517efba8",
+      "excluded": false,
+      "screenshot": false
+    },
     {
       "then": "success",
       "type": "wait",
-      "fatal": false,
-      "lineId": "d35e18a6-7d2a-46a2-b5ea-a5ad09c35b28",
-      "timeout": 10000,
+      "fatal": true,
+      "lineId": "39aad300-739c-480a-8563-46e2c41f2e62",
+      "timeout": 15000,
       "excluded": false,
       "condition": {
         "type": "visible",
         "subject": {
           "type": "element",
-          "nameHint": "Demo Logo",
-          "elementId": "f63b9c55-ff1a-4236-ab15-1a287403080d"
+          "nameHint": "Main Menu Home Button",
+          "elementId": "201d0f24-f451-4901-9496-c69b361c7f5b"
         },
         "expression": []
-      },
-      "screenshot": false
-    },
-    {
-      "then": "fail",
-      "type": "assert",
-      "fatal": false,
-      "lineId": "660b2722-74ad-4e4a-b827-7bab1d45fa83",
-      "excluded": false,
-      "condition": {
-        "type": "has",
-        "subject": {
-          "type": "element",
-          "nameHint": "Demo Logo",
-          "elementId": "f63b9c55-ff1a-4236-ab15-1a287403080d"
-        },
-        "expression": [
-          {
-            "uid": "79335c9b-24da-420d-8cb2-a14913ba3d48",
-            "val": "http://file.suite.st/demoapp/assets/logo.png",
-            "type": "!=",
-            "property": "image",
-            "deviation": 300,
-            "inherited": true
-          }
-        ]
       },
       "screenshot": false
     }

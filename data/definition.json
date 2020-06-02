@@ -2,77 +2,32 @@
   {
     "type": "openApp",
     "fatal": false,
-    "lineId": "5202e0d8-0cae-4587-bb01-c57c0d46371f",
+    "lineId": "9952c3c9-8df7-4a5a-9172-0da1be908524",
     "excluded": false,
     "screenshot": false
   },
   {
-    "val": "Run snippet",
+    "val": "Ensure app is open\nAnd test multiline comments",
     "type": "comment",
     "fatal": false,
-    "lineId": "b05c9c06-87a4-4b38-8d1b-32263090d20f",
+    "lineId": "97f10ef0-5d75-4991-b76e-6a5f9c025a10",
     "excluded": false,
     "screenshot": false
   },
   {
-    "val": "b7a6b6b2-04a5-49a8-91e6-a97b26479bb1",
+    "val": "74a6e24f-6f87-4b77-8522-cfcd27ea2e16",
     "type": "runSnippet",
     "count": 1,
-    "fatal": true,
-    "lineId": "757cd8f1-c064-4b46-a151-32a830950ebb",
+    "fatal": false,
+    "lineId": "897feabc-27ba-42d8-906f-7d96d4ce1395",
     "excluded": false,
     "screenshot": false
   },
   {
-    "val": "Make sure videos are playable",
+    "val": "Excluded line",
     "type": "comment",
     "fatal": false,
-    "lineId": "5e0eca50-d36a-49cf-8888-35094966daaf",
-    "excluded": false,
-    "screenshot": false
-  },
-  {
-    "val": "7e44a041-7256-4e3a-8b59-d699f3d08d79",
-    "type": "runSnippet",
-    "count": 5,
-    "fatal": false,
-    "lineId": "94435050-33d8-46aa-9ee6-cf8866b65102",
-    "excluded": false,
-    "condition": {
-      "type": "has",
-      "subject": {
-        "val": {
-          "css": ":nth-child(5) > :nth-child(2) > div",
-          "ifMultipleFoundReturn": 1
-        },
-        "name": "BBB focused",
-        "type": "element",
-        "nameHint": "BBB focused",
-        "elementId": "79272c2d-4fdf-4a73-b523-46381f7e0f8c"
-      },
-      "expression": [
-        {
-          "uid": "aae1869b-36a3-471c-acf0-550e0dd68cba",
-          "val": "rgb(52, 191, 228)",
-          "type": "=",
-          "property": "color"
-        },
-        {
-          "uid": "29eb5636-242d-41f5-8a8f-dc5a659c3e76",
-          "val": "Big Buck Bunny",
-          "type": "=",
-          "property": "text"
-        }
-      ]
-    },
-    "screenshot": false,
-    "negateCondition": false
-  },
-  {
-    "val": "This line will fail",
-    "type": "comment",
-    "fatal": false,
-    "lineId": "81f998b7-da60-41f2-aa69-168b7e47269e",
+    "lineId": "5efa7d89-ca69-4eda-b7b7-2b432836d1fb",
     "excluded": false,
     "screenshot": false
   },
@@ -80,29 +35,432 @@
     "then": "success",
     "type": "assert",
     "fatal": false,
-    "lineId": "1f84a278-0141-4b08-8306-08c94060f943",
+    "lineId": "bc7b567a-50a4-492a-be96-095694b46fbd",
+    "excluded": true,
+    "condition": {
+      "val": "http://file.suite.st/sampleapp/index-hbbtv.html",
+      "type": "=",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Snippet with error",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "a334a902-33dc-4020-a4a3-5ed38008f4b3",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "54d06ee9-6e5f-4046-9625-f06d7aa43ee6",
+    "type": "runSnippet",
+    "count": 1,
+    "fatal": false,
+    "lineId": "8c50c967-d8ab-49de-a2e7-5e2a92b4a82b",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "Nested snippets",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "7d1ddede-07ae-4c40-8e7e-10ae90be7eba",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "5b30b436-e23a-41a4-bdb2-af96b54d57ff",
+    "type": "runSnippet",
+    "count": 1,
+    "fatal": false,
+    "lineId": "700147b1-f20f-411e-867e-f7a33a3b7a9a",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "Network request assertion",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "7d3b2f1f-092e-4dc5-9c00-028ebda17777",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "success",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "53ec3a24-8155-4d30-9974-83de6517415a",
     "excluded": false,
     "condition": {
-      "type": "has",
+      "type": "made",
+      "subject": {
+        "val": "http://file.suite.st/sampleapp/js/appui/app.js?bust=1591090595522",
+        "type": "network",
+        "compare": "=",
+        "requestInfo": [
+          {
+            "uid": "4ae3d842-7139-4ba6-bfcd-4759e764c7f4",
+            "val": "GET",
+            "name": "@method",
+            "compare": "="
+          },
+          {
+            "uid": "0a1f5ce7-1a57-4b00-9149-081d8443597e",
+            "val": "*/*",
+            "name": "Accept",
+            "compare": "="
+          },
+          {
+            "uid": "9b224915-fbef-4a4e-ac23-5aba64170c02",
+            "val": "en-US,en;q=0.9",
+            "name": "Accept-Language",
+            "compare": "="
+          },
+          {
+            "uid": "2b9bb392-34c0-43f9-98b9-4320537847d1",
+            "val": "0",
+            "name": "Content-Length",
+            "compare": "="
+          },
+          {
+            "uid": "ed00f9bd-24a7-43ba-9302-bbf50d5200fd",
+            "val": "file.suite.st",
+            "name": "Host",
+            "compare": "="
+          },
+          {
+            "uid": "e2af98f3-8714-4038-910d-f67b7faa6d1f",
+            "val": "http://file.suite.st/sampleapp/index-hbbtv.html",
+            "name": "Referer",
+            "compare": "="
+          },
+          {
+            "uid": "771e6c78-3b2c-4184-a989-075594282ce2",
+            "val": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
+            "name": "User-Agent",
+            "compare": "="
+          },
+          {
+            "uid": "bd7eb71d-8bfa-4f7b-aada-64c23c5bcd08",
+            "val": "1.1 suitestify",
+            "name": "Via",
+            "compare": "="
+          }
+        ],
+        "responseInfo": [
+          {
+            "uid": "e2721402-15c7-4e9b-a2fa-5054114f9ea7",
+            "val": 200,
+            "name": "@status",
+            "compare": "="
+          },
+          {
+            "uid": "1d6237c9-fe32-4a2e-b72f-dbee69740153",
+            "val": "bytes",
+            "name": "Accept-Ranges",
+            "compare": "="
+          },
+          {
+            "uid": "33e829df-a36a-42bc-8d54-ba213b1a3f7e",
+            "val": "max-age=300",
+            "name": "Cache-Control",
+            "compare": "="
+          },
+          {
+            "uid": "1c4c172a-a5e6-44fa-8bf2-98cc35a0580e",
+            "val": "keep-alive",
+            "name": "Connection",
+            "compare": "="
+          },
+          {
+            "uid": "edef29f3-4c14-453c-9cd0-d6e628e6b6ae",
+            "val": "2524",
+            "name": "Content-Length",
+            "compare": "="
+          },
+          {
+            "uid": "4c286fa3-cb7c-4fce-ac0d-6559293f4fed",
+            "val": "application/javascript",
+            "name": "Content-Type",
+            "compare": "="
+          },
+          {
+            "uid": "378365ca-a48b-4b6a-aa63-75a9a5d4ecb1",
+            "val": "Tue, 02 Jun 2020 09:36:35 GMT",
+            "name": "Date",
+            "compare": "="
+          },
+          {
+            "uid": "2f410897-6a8f-4154-9d7d-d8280fabf0eb",
+            "val": "\"5a579791-9dc\"",
+            "name": "Etag",
+            "compare": "="
+          },
+          {
+            "uid": "8902e9dd-1939-42e9-9359-ff035b586784",
+            "val": "Tue, 02 Jun 2020 09:41:35 GMT",
+            "name": "Expires",
+            "compare": "="
+          },
+          {
+            "uid": "b1cd3f7c-b266-43de-a3cb-e217912a7417",
+            "val": "Thu, 11 Jan 2018 16:57:53 GMT",
+            "name": "Last-Modified",
+            "compare": "="
+          },
+          {
+            "uid": "350ce6b9-c07c-48b4-83dc-0eb0f9c321d8",
+            "val": "nginx",
+            "name": "Server",
+            "compare": "="
+          }
+        ]
+      },
+      "searchStrategy": "all"
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Inverted warning - not thrown",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "24f93fd0-f183-4c99-a9fc-4a7413730093",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "warning",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "646e4765-c629-44dd-b9dc-5e015e65d465",
+    "excluded": false,
+    "condition": {
+      "val": "foo-bar",
+      "type": "~",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Inverted warning - thrown",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "a176c7e7-0dc8-47ae-b128-369aeeb7a06d",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "warning",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "87412942-9ee9-4a46-869a-5183e8a9ea67",
+    "excluded": false,
+    "condition": {
+      "val": "foo-bar",
+      "type": "!~",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Inverted error - not thrown",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "d90ccbc2-e5f7-499e-83bc-87aee8eaa674",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "fail",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "c140befb-0150-42db-8227-68c8a385d2fc",
+    "excluded": false,
+    "condition": {
+      "val": "foo-bar",
+      "type": "~",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Inverted error - thrown",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "e10d3c6f-3aae-44bf-952c-c4cace4ed6c0",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "fail",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "5c9951dc-cf1d-4fc1-bd5c-7edee0b4a828",
+    "excluded": false,
+    "condition": {
+      "val": "foo-bar",
+      "type": "!~",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Inverted fatal - not thrown",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "ececc22f-e75b-4b4d-b5b0-5f493de597f7",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "fail",
+    "type": "assert",
+    "fatal": true,
+    "lineId": "462f0e11-83ec-4baa-a4f6-16d4d01f845e",
+    "excluded": false,
+    "condition": {
+      "val": "foo-<%img%>",
+      "type": "~",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Snippet loops",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "c6d6e66a-783f-4ac3-8dcb-0c62641362f7",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "74a6e24f-6f87-4b77-8522-cfcd27ea2e16",
+    "type": "runSnippet",
+    "count": 2,
+    "fatal": false,
+    "lineId": "9aa40aa7-464b-4376-8e44-1509dcaa5538",
+    "excluded": false,
+    "condition": {
+      "val": "foo-bar",
+      "type": "~",
+      "subject": {
+        "type": "location"
+      }
+    },
+    "screenshot": false,
+    "negateCondition": false
+  },
+  {
+    "val": "JS expression",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "c60f0c98-262a-43fa-83e0-a13c64c6cd5a",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "// This is a multiline JS\nline 1\nline 2\nwith var <%var1%>",
+    "type": "execCmd",
+    "fatal": false,
+    "lineId": "17772ab7-b703-4da4-8da0-2e4072898594",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "val": "Assert matches JS\n",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "a15213f3-b0f8-4e27-b8be-779a5f1e6eb7",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "success",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "fec4be4c-a145-4dd3-9876-d4906ffd181e",
+    "excluded": false,
+    "condition": {
+      "val": "// Specify a callback function.\n// Test subject will be passed to the function in the first argument.\n// Return a boolean value (returning true means the line will pass).\n// console.logs will be visible in Suitest console\n\nfunction(testSubject) {\n\tconsole.log(testSubject);\n\treturn \"<%var2%>\" === '345';\n}",
+      "type": "matches",
       "subject": {
         "val": {
-          "css": "#root > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1)",
+          "css": "#mainMenuhomeButton",
           "ifMultipleFoundReturn": 1
         },
-        "name": "Demo Logo",
+        "name": "Main Menu Home Button",
         "type": "element",
-        "nameHint": "Demo Logo",
-        "elementId": "f63b9c55-ff1a-4236-ab15-1a287403080d"
+        "nameHint": "Main Menu Home Button",
+        "elementId": "201d0f24-f451-4901-9496-c69b361c7f5b"
       },
-      "expression": [
-        {
-          "uid": "520ce97c-2f33-44d9-a172-045478b2136c",
-          "val": "http://file.suite.st/demoapp/assets/<%img%>",
-          "type": "=",
-          "property": "image",
-          "_isEditedByUser": true
-        }
-      ]
+      "expression": []
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Assert JS expression",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "331ed6df-e524-482b-b4af-5afd74bdd90b",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "success",
+    "type": "assert",
+    "fatal": false,
+    "lineId": "f77eba44-cd2a-43b8-98cd-79b99d776c3c",
+    "excluded": false,
+    "condition": {
+      "val": "foo bar <%var2%>",
+      "type": "$",
+      "subject": {
+        "val": "someExpression();",
+        "type": "javascript"
+      }
+    },
+    "screenshot": false
+  },
+  {
+    "val": "Fatal line, with screenshot",
+    "type": "comment",
+    "fatal": false,
+    "lineId": "ad479d2c-1995-4d08-9eca-e016e41da8fe",
+    "excluded": false,
+    "screenshot": false
+  },
+  {
+    "then": "success",
+    "type": "assert",
+    "fatal": true,
+    "lineId": "4e7aee1e-d94f-4448-a8d7-66b4ad29832f",
+    "excluded": false,
+    "condition": {
+      "type": "!exists",
+      "subject": {
+        "val": {
+          "css": "#mainMenuhomeButton",
+          "ifMultipleFoundReturn": 1
+        },
+        "name": "Main Menu Home Button",
+        "type": "element",
+        "nameHint": "Main Menu Home Button",
+        "elementId": "201d0f24-f451-4901-9496-c69b361c7f5b"
+      },
+      "expression": []
     },
     "screenshot": true
   }
