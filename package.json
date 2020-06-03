@@ -19,7 +19,7 @@
     "help": "ts-node ./lib/index.ts --help",
     "build": "ts-node ./lib/index.ts && copyfiles -f node_modules/@suitest/smst-to-html/suitest-test-line.css ./build",
     "build:steps": "ts-node ./lib/index.ts --steps-only && copyfiles -f node_modules/@suitest/smst-to-html/suitest-test-line.css ./build",
-    "build:own": "ts-node ./lib/index.ts -o -i [tokenId] -p [tokenPassword] -t [testResultId] -r [testPackRunId] && copyfiles -f node_modules/@suitest/smst-to-html/suitest-test-line.css ./build",
+    "build:own": "ts-node ./lib/index.ts -o -i l9QKJPOzx7 -p 2edb30e1e63710340104d91b03f63ee9695314777442928e79d34175b6c3447f -t 650914 -r 339492 && copyfiles -f node_modules/@suitest/smst-to-html/suitest-test-line.css ./build",
     "build:own:steps": "ts-node ./lib/index.ts --steps-only -o -i [tokenId] -p [tokenPassword] -t [testResultId] -r [testPackRunId] && copyfiles -f node_modules/@suitest/smst-to-html/suitest-test-line.css ./build"
   },
   "dependencies": {
